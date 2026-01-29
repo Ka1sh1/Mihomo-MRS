@@ -1,1 +1,3 @@
-#EEEEEEEEESGERIT this goes Direct
+payload:
+  - 'go.com'
+  - '.down.com'

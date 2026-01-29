@@ -1,1 +1,3 @@
-#EEEEEEEEESGERIT this goes Proxy
+payload:
+  - 'go.com'
+  - '.down.com'
