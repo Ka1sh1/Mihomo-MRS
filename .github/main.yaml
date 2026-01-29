@@ -1,9 +1,9 @@
-name: Compile MRS
+name: Compile Classical MRS
 on:
   push:
     paths:
-      - '*.yaml' # Скрипт сработает только если ты изменил yaml файлы
-  workflow_dispatch: # Позволяет запустить вручную кнопкой на сайте
+      - 'rules/**'
+  workflow_dispatch:
 
 jobs:
   compile:
@@ -18,15 +18,17 @@ jobs:
           curl -L -o mihomo-tool https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9
           chmod +x mihomo-tool
 
-      - name: Compile Rulesets
+      - name: Compile
         run: |
-          ./mihomo-tool ruleset compile-text Go_Direct.yaml Go_Direct.mrs
-          ./mihomo-tool ruleset compile-text Go_Proxy.yaml Go_Proxy.mrs
+          mkdir -p publish
+          # Компилируем как classical, чтобы работали процессы и порты
+          ./mihomo-tool ruleset compile-text rules/direct.yaml publish/direct.mrs
+          ./mihomo-tool ruleset compile-text rules/proxy.yaml publish/proxy.mrs
 
-      - name: Commit and Push MRS
+      - name: Push
         run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add *.mrs
-          git commit -m "Auto-update MRS binary files" || exit 0
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add publish/*.mrs
+          git commit -m "Update binary rulesets" || exit 0
           git push
