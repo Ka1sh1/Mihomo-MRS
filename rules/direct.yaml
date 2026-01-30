@@ -183,6 +183,8 @@ payload:
   - DOMAIN-SUFFIX,tass.ru
   - DOMAIN-SUFFIX,tass.com
   - DOMAIN-SUFFIX,ria.ru
+  - DOMAIN-SUFFIX,remanga.org
+  - DOMAIN-SUFFIX,remanga
   - DOMAIN-SUFFIX,ria.com
   - DOMAIN-SUFFIX,interfax.ru
   - DOMAIN-SUFFIX,interfax.com
