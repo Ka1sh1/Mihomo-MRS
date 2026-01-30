@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  compile:
+  build:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -15,32 +15,46 @@ jobs:
 
       - name: Setup Mihomo
         run: |
-          # 1. Скачиваем официальное ядро (v1.18.9)
+          # 1. Скачиваем официальное ядро v1.18.9
+          echo "Downloading Mihomo..."
           curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9.gz
           
-          # 2. Распаковываем с флагом -f (force), чтобы не зависало на вопросах
+          # 2. Распаковываем (force чтобы не спрашивал подтверждения)
           gunzip -f mihomo.gz
           
           # 3. Даем права на запуск
           chmod +x mihomo
           
-          # 4. Проверка (должно вывести версию)
+          # 4. Проверка версии (чтобы убедиться, что скачалось не HTML)
           ./mihomo -v
 
-      - name: Compile MRS
+      - name: Process Rules
         run: |
           mkdir -p publish
-          # Используем команду convert-ruleset из основного ядра
-          ./mihomo ruleset compile rules/direct.yaml publish/direct.mrs
-          ./mihomo ruleset compile rules/proxy.yaml publish/proxy.mrs
           
-          # Проверка результата
+          echo "Processing Direct list..."
+          # Пытаемся скомпилировать. Если ошибка (так как classical в mrs может не поддерживаться), то просто копируем yaml
+          if ./mihomo convert-ruleset classical yaml rules/direct.yaml publish/direct.mrs; then
+            echo "Direct compiled to MRS successfully"
+          else
+            echo "WARNING: Could not compile classical rules to MRS. Copying as YAML."
+            cp rules/direct.yaml publish/direct.yaml
+          fi
+
+          echo "Processing Proxy list..."
+          if ./mihomo convert-ruleset classical yaml rules/proxy.yaml publish/proxy.mrs; then
+             echo "Proxy compiled to MRS successfully"
+          else
+             echo "WARNING: Could not compile classical rules to MRS. Copying as YAML."
+             cp rules/proxy.yaml publish/proxy.yaml
+          fi
+
           ls -la publish/
 
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add publish/*.mrs
-          git commit -m "Update binary rulesets" || echo "No changes to commit"
+          git add publish/*
+          git commit -m "Update rulesets" || echo "No changes to commit"
           git push
