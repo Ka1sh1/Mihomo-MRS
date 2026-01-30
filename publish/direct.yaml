@@ -88,6 +88,7 @@ payload:
   - DOMAIN-KEYWORD,mir-card
   - DOMAIN-KEYWORD,мир
   # Russian Services and Social Networks
+  - DOMAIN-SUFFIX,2ip.ru
   - DOMAIN-SUFFIX,yandex.ru
   - DOMAIN-SUFFIX,yandex.com
   - DOMAIN-SUFFIX,yandex.net
