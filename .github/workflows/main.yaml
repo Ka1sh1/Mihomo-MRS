@@ -1,4 +1,4 @@
-name: Compile Classical MRS
+name: Compile Rulesets
 on:
   push:
     paths:
@@ -12,25 +12,24 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
-      - name: Install Mihomo Tool
+      - name: Download Mihomo Tool
         run: |
+          # Скачиваем бинарник компилятора
           curl -L -o mihomo-tool https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9
-          chmod +x mihomo-tool
+          chmod +x ./mihomo-tool
 
-      - name: Compile
+      - name: Compile MRS
         run: |
           mkdir -p publish
-          # Компилируем как classical, чтобы работали процессы и порты
+          # Компилируем твои файлы из папки rules в папку publish
           ./mihomo-tool ruleset compile-text rules/direct.yaml publish/direct.mrs
           ./mihomo-tool ruleset compile-text rules/proxy.yaml publish/proxy.mrs
 
-      - name: Push
+      - name: Commit and Push
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add publish/*.mrs
-          git diff --staged --quiet || git commit -m "Update binary rulesets"
+          git commit -m "Update binary rulesets" || exit 0
           git push
