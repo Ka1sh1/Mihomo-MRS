@@ -28,25 +28,26 @@ jobs:
           # 4. Проверка версии (чтобы убедиться, что скачалось не HTML)
           ./mihomo -v
 
-      - name: Process Rules
+      - name: Compile Rules
         run: |
           mkdir -p publish
           
-          echo "Processing Direct list..."
-          # Пытаемся скомпилировать. Если ошибка (так как classical в mrs может не поддерживаться), то просто копируем yaml
-          if ./mihomo convert-ruleset classical yaml rules/direct.yaml publish/direct.mrs; then
-            echo "Direct compiled to MRS successfully"
+          # MRS supports only domain/ipcidr; our rules are classical (DOMAIN-SUFFIX, PROCESS-NAME, etc.).
+          # Compile classical YAML → YAML (validates and normalizes); fallback to copy on failure.
+          echo "Compiling Direct list..."
+          if ./mihomo convert-ruleset classical yaml rules/direct.yaml publish/direct.yaml 2>/dev/null; then
+            echo "Direct compiled successfully"
           else
-            echo "WARNING: Could not compile classical rules to MRS. Copying as YAML."
+            echo "Convert failed, copying Direct YAML..."
             cp rules/direct.yaml publish/direct.yaml
           fi
 
-          echo "Processing Proxy list..."
-          if ./mihomo convert-ruleset classical yaml rules/proxy.yaml publish/proxy.mrs; then
-             echo "Proxy compiled to MRS successfully"
+          echo "Compiling Proxy list..."
+          if ./mihomo convert-ruleset classical yaml rules/proxy.yaml publish/proxy.yaml 2>/dev/null; then
+            echo "Proxy compiled successfully"
           else
-             echo "WARNING: Could not compile classical rules to MRS. Copying as YAML."
-             cp rules/proxy.yaml publish/proxy.yaml
+            echo "Convert failed, copying Proxy YAML..."
+            cp rules/proxy.yaml publish/proxy.yaml
           fi
 
           ls -la publish/
@@ -55,6 +56,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add publish/*
+          git add publish/
+          git status
           git commit -m "Update rulesets" || echo "No changes to commit"
           git push
