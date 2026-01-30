@@ -1,5 +1,46 @@
 payload:
   # ==========================================
+  # 0. DOMAIN-KEYWORD (приоритет)
+  # ==========================================
+  - DOMAIN-KEYWORD,gosuslugi
+  - DOMAIN-KEYWORD,roskomnadzor
+  - DOMAIN-KEYWORD,sberbank
+  - DOMAIN-KEYWORD,tinkoff
+  - DOMAIN-KEYWORD,vtb
+  - DOMAIN-KEYWORD,alfabank
+  - DOMAIN-KEYWORD,mir-card
+  - DOMAIN-KEYWORD,yoomoney
+  - DOMAIN-KEYWORD,yandex
+  - DOMAIN-KEYWORD,яндекс
+  - DOMAIN-KEYWORD,vk
+  - DOMAIN-KEYWORD,vkontakte
+  - DOMAIN-KEYWORD,odnoklassniki
+  - DOMAIN-KEYWORD,mail.ru
+  - DOMAIN-KEYWORD,avito
+  - DOMAIN-KEYWORD,ozon
+  - DOMAIN-KEYWORD,wildberries
+  - DOMAIN-KEYWORD,cian
+  - DOMAIN-KEYWORD,remanga
+  - DOMAIN-KEYWORD,reimg
+  - DOMAIN-KEYWORD,steam
+  - DOMAIN-KEYWORD,qiwi
+  - DOMAIN-KEYWORD,dzen
+  - DOMAIN-KEYWORD,hh.ru
+  - DOMAIN-KEYWORD,sbermegamarket
+  - DOMAIN-KEYWORD,sberzvuk
+  - DOMAIN-KEYWORD,samokat
+  - DOMAIN-KEYWORD,cdek
+  - DOMAIN-KEYWORD,boxberry
+  - DOMAIN-KEYWORD,kontur
+  - DOMAIN-KEYWORD,sbis
+  - DOMAIN-KEYWORD,1c.ru
+  - DOMAIN-KEYWORD,kaspersky
+  - DOMAIN-KEYWORD,rutube
+  - DOMAIN-KEYWORD,ivi
+  - DOMAIN-KEYWORD,okko
+  - DOMAIN-KEYWORD,2gis
+
+  # ==========================================
   # 1. ГОСУДАРСТВЕННЫЕ СЕРВИСЫ РФ
   # ==========================================
   - DOMAIN-SUFFIX,gosuslugi.ru
@@ -31,8 +72,9 @@ payload:
   - DOMAIN-SUFFIX,edu.gov.ru
   - DOMAIN-SUFFIX,mos.ru
   - DOMAIN-SUFFIX,spb.gov.ru
-  - DOMAIN-KEYWORD,gosuslugi
-  - DOMAIN-KEYWORD,roskomnadzor
+  - DOMAIN-SUFFIX,crpt.ru
+  - DOMAIN-SUFFIX,customs.gov.ru
+  - DOMAIN-SUFFIX,fts.gov.ru
 
   # ==========================================
   # 2. БАНКИ И ФИНАНСЫ (РФ)
@@ -41,19 +83,15 @@ payload:
   - DOMAIN-SUFFIX,sberbank.ru
   - DOMAIN-SUFFIX,sber.ru
   - DOMAIN-SUFFIX,sbrf.ru
-  - DOMAIN-KEYWORD,sberbank
   # Тинькофф (Т-Банк)
   - DOMAIN-SUFFIX,tinkoff.ru
   - DOMAIN-SUFFIX,tcsbank.ru
-  - DOMAIN-KEYWORD,tinkoff
   # ВТБ
   - DOMAIN-SUFFIX,vtb.ru
   - DOMAIN-SUFFIX,vtb24.ru
-  - DOMAIN-KEYWORD,vtb
   # Альфа
   - DOMAIN-SUFFIX,alfabank.ru
   - DOMAIN-SUFFIX,alfa.ru
-  - DOMAIN-KEYWORD,alfabank
   # Другие банки
   - DOMAIN-SUFFIX,gazprombank.ru
   - DOMAIN-SUFFIX,gpb.ru
@@ -80,8 +118,10 @@ payload:
   - DOMAIN-SUFFIX,yandex.money
   - DOMAIN-SUFFIX,mir-card.ru
   - DOMAIN-SUFFIX,nspk.ru
-  - DOMAIN-KEYWORD,mir-card
-  - DOMAIN-KEYWORD,yoomoney
+  - DOMAIN-SUFFIX,sbp.nspk.ru
+  - DOMAIN-SUFFIX,sovcombank.ru
+  - DOMAIN-SUFFIX,domrf.ru
+  - DOMAIN-SUFFIX,tbank.ru
 
   # ==========================================
   # 3. ЭКОСИСТЕМЫ И СОЦСЕТИ (VK, YANDEX, MAIL)
@@ -99,8 +139,10 @@ payload:
   - DOMAIN-SUFFIX,yandex.cloud
   - DOMAIN-SUFFIX,disk.yandex.ru
   - DOMAIN-SUFFIX,music.yandex.ru
-  - DOMAIN-KEYWORD,yandex
-  - DOMAIN-KEYWORD,яндекс
+  - DOMAIN-SUFFIX,yastatic.net
+  - DOMAIN-SUFFIX,dzen.ru
+  - DOMAIN-SUFFIX,eda.yandex.ru
+  - DOMAIN-SUFFIX,lavka.yandex.ru
   # VK & Mail.ru
   - DOMAIN-SUFFIX,vk.com
   - DOMAIN-SUFFIX,vk.ru
@@ -116,10 +158,6 @@ payload:
   - DOMAIN-SUFFIX,my.mail.ru
   - DOMAIN-SUFFIX,ok.ru
   - DOMAIN-SUFFIX,odnoklassniki.ru
-  - DOMAIN-KEYWORD,vk
-  - DOMAIN-KEYWORD,vkontakte
-  - DOMAIN-KEYWORD,odnoklassniki
-  - DOMAIN-KEYWORD,mail.ru
 
   # ==========================================
   # 4. МАРКЕТПЛЕЙСЫ И СЕРВИСЫ
@@ -137,10 +175,32 @@ payload:
   - DOMAIN-SUFFIX,2gis.ru
   - DOMAIN-SUFFIX,2gis.com
   - DOMAIN-SUFFIX,2ip.ru
-  - DOMAIN-KEYWORD,avito
-  - DOMAIN-KEYWORD,ozon
-  - DOMAIN-KEYWORD,wildberries
-  - DOMAIN-KEYWORD,cian
+  # Ритейл и доставка
+  - DOMAIN-SUFFIX,sbermegamarket.ru
+  - DOMAIN-SUFFIX,lamoda.ru
+  - DOMAIN-SUFFIX,dns-shop.ru
+  - DOMAIN-SUFFIX,citilink.ru
+  - DOMAIN-SUFFIX,mvideo.ru
+  - DOMAIN-SUFFIX,eldorado.ru
+  - DOMAIN-SUFFIX,goods.ru
+  - DOMAIN-SUFFIX,samokat.ru
+  - DOMAIN-SUFFIX,sbermarket.ru
+  - DOMAIN-SUFFIX,deliveryclub.ru
+  - DOMAIN-SUFFIX,cdek.ru
+  - DOMAIN-SUFFIX,boxberry.ru
+  - DOMAIN-SUFFIX,dpd.ru
+  # Работа
+  - DOMAIN-SUFFIX,hh.ru
+  - DOMAIN-SUFFIX,hh.net
+  - DOMAIN-SUFFIX,superjob.ru
+  # Бизнес и ЭДО
+  - DOMAIN-SUFFIX,kontur.ru
+  - DOMAIN-SUFFIX,sbis.ru
+  - DOMAIN-SUFFIX,1c.ru
+  - DOMAIN-SUFFIX,v8.1c.ru
+  # Безопасность
+  - DOMAIN-SUFFIX,kaspersky.ru
+  - DOMAIN-SUFFIX,kaspersky.com
 
   # ==========================================
   # 5. МЕДИА И ОПЕРАТОРЫ СВЯЗИ
@@ -158,7 +218,6 @@ payload:
   - DOMAIN-SUFFIX,kommersant.ru
   - DOMAIN-SUFFIX,vedomosti.ru
   - DOMAIN-SUFFIX,rbc.ru
-  - DOMAIN-SUFFIX,remanga.org
   # Кинотеатры
   - DOMAIN-SUFFIX,ivi.ru
   - DOMAIN-SUFFIX,okko.tv
@@ -166,6 +225,13 @@ payload:
   - DOMAIN-SUFFIX,more.tv
   - DOMAIN-SUFFIX,premier.one
   - DOMAIN-SUFFIX,start.ru
+  - DOMAIN-SUFFIX,smotrim.ru
+  - DOMAIN-SUFFIX,russia.tv
+  - DOMAIN-SUFFIX,sber-zvuk.ru
+  - DOMAIN-SUFFIX,timeout.ru
+  - DOMAIN-SUFFIX,championat.com
+  - DOMAIN-SUFFIX,sports.ru
+  - DOMAIN-SUFFIX,matchtv.ru
   # Операторы
   - DOMAIN-SUFFIX,megafon.ru
   - DOMAIN-SUFFIX,mts.ru
@@ -174,6 +240,13 @@ payload:
   - DOMAIN-SUFFIX,yota.ru
   - DOMAIN-SUFFIX,rostelecom.ru
   - DOMAIN-SUFFIX,rt.ru
+  - DOMAIN-SUFFIX,domru.ru
+  # Образование (РФ)
+  - DOMAIN-SUFFIX,stepik.org
+  - DOMAIN-SUFFIX,foxford.ru
+  - DOMAIN-SUFFIX,skillbox.ru
+  - DOMAIN-SUFFIX,netology.ru
+  - DOMAIN-SUFFIX,geekbrains.ru
 
   # ==========================================
   # 6. STEAM (DIRECT)
@@ -191,7 +264,6 @@ payload:
   - DOMAIN-SUFFIX,steamstat.us
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steam.ru
-  - DOMAIN-KEYWORD,steam
 
   # ==========================================
   # 7. ПРОЦЕССЫ (WINDOWS & MACOS)
@@ -255,5 +327,7 @@ payload:
   - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
   
   # Локальная сеть и порты
-  - IP-CIDR,192.168.1.0/24,no-resolve
+  - IP-CIDR,192.168.0.0/16,no-resolve
+  - IP-CIDR,10.0.0.0/8,no-resolve
+  - IP-CIDR,172.16.0.0/12,no-resolve
   - DST-PORT,8080
