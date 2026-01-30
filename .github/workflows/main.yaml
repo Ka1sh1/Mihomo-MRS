@@ -15,14 +15,14 @@ jobs:
 
       - name: Download Mihomo Tool
         run: |
-          # Скачиваем бинарник компилятора
           curl -L -o mihomo-tool https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9
           chmod +x ./mihomo-tool
+          # Проверка, что это не пустой файл или HTML
+          ls -l ./mihomo-tool
 
       - name: Compile MRS
         run: |
           mkdir -p publish
-          # Компилируем твои файлы из папки rules в папку publish
           ./mihomo-tool ruleset compile-text rules/direct.yaml publish/direct.mrs
           ./mihomo-tool ruleset compile-text rules/proxy.yaml publish/proxy.mrs
 
