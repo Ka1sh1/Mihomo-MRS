@@ -1,85 +1,95 @@
 payload:
-  ## Домены
-  - DOMAIN-SUFFIX,google.com
-  - DOMAIN-KEYWORD,yandex
-  # Anime streaming sites blocked in Russia
-  - DOMAIN-SUFFIX,yummianime.com
-  - DOMAIN-SUFFIX,yummianime.ru
-  - DOMAIN-SUFFIX,animego.org
-  - DOMAIN-SUFFIX,animego.ru
-  - DOMAIN-SUFFIX,myanimelist.net
-  - DOMAIN-SUFFIX,myanimelist.com
-  - DOMAIN-SUFFIX,jut.su
-  - DOMAIN-SUFFIX,animeclub.tv
-  - DOMAIN-SUFFIX,wikianime.tv
-  - DOMAIN-SUFFIX,amelia-online.ru
-  - DOMAIN-SUFFIX,crunchyroll.com
-  - DOMAIN-SUFFIX,crunchyroll.ru
-  - DOMAIN-SUFFIX,funimation.com
-  - DOMAIN-SUFFIX,wakanim.tv
-  - DOMAIN-SUFFIX,wakanim.ru
-  - DOMAIN-SUFFIX,9anime.to
-  - DOMAIN-SUFFIX,9anime.id
-  - DOMAIN-SUFFIX,animepahe.com
-  - DOMAIN-SUFFIX,animepahe.ru
-  - DOMAIN-SUFFIX,gogoanime.sk
-  - DOMAIN-SUFFIX,gogoanime.io
-  - DOMAIN-SUFFIX,animekisa.tv
-  - DOMAIN-SUFFIX,zoro.to
-  - DOMAIN-SUFFIX,animeout.xyz
-  # Streaming services blocked in Russia or blocking Russia
+  # ==========================================
+  # 1. СОЦИАЛЬНЫЕ СЕТИ И МЕССЕНДЖЕРЫ
+  # ==========================================
+  # Meta & Instagram
+  - DOMAIN-SUFFIX,facebook.com
+  - DOMAIN-SUFFIX,fb.com
+  - DOMAIN-SUFFIX,instagram.com
+  - DOMAIN-SUFFIX,cdninstagram.com
+  # X (Twitter)
+  - DOMAIN-SUFFIX,twitter.com
+  - DOMAIN-SUFFIX,twimg.com
+  - DOMAIN-SUFFIX,t.co
+  - DOMAIN-SUFFIX,x.com
+  # Discord
+  - DOMAIN-SUFFIX,discord.com
+  - DOMAIN-SUFFIX,discord.gg
+  - DOMAIN-SUFFIX,discordapp.com
+  - DOMAIN-SUFFIX,discordapp.net
+  # Other Socials
+  - DOMAIN-SUFFIX,linkedin.com
+  - DOMAIN-SUFFIX,tiktok.com
+  - DOMAIN-SUFFIX,tiktokv.com
+  - DOMAIN-SUFFIX,snapchat.com
+  - DOMAIN-SUFFIX,pinterest.com
+  - DOMAIN-SUFFIX,reddit.com
+  - DOMAIN-SUFFIX,redd.it
+  - DOMAIN-SUFFIX,signal.org
+
+  # ==========================================
+  # 2. СТРИМИНГ И КИНО (NETFLIX, DISNEY, ETC)
+  # ==========================================
+  # Netflix
   - DOMAIN-SUFFIX,netflix.com
-  - DOMAIN-SUFFIX,netflix.ru
+  - DOMAIN-SUFFIX,netflix.net
   - DOMAIN-SUFFIX,nflxext.com
   - DOMAIN-SUFFIX,nflximg.net
   - DOMAIN-SUFFIX,nflxso.net
   - DOMAIN-SUFFIX,nflxvideo.net
+  # Disney+ & Hulu
   - DOMAIN-SUFFIX,disney.com
   - DOMAIN-SUFFIX,disneyplus.com
-  - DOMAIN-SUFFIX,disney.ru
   - DOMAIN-SUFFIX,disneyapi.com
   - DOMAIN-SUFFIX,disneystreaming.com
+  - DOMAIN-SUFFIX,hulu.com
+  # HBO / Max
   - DOMAIN-SUFFIX,hbo.com
   - DOMAIN-SUFFIX,hbomax.com
-  - DOMAIN-SUFFIX,hbo.ru
   - DOMAIN-SUFFIX,maxgo.com
+  # Amazon Prime
   - DOMAIN-SUFFIX,amazon.com
   - DOMAIN-SUFFIX,amazonprimevideo.com
   - DOMAIN-SUFFIX,primevideo.com
   - DOMAIN-SUFFIX,amazonvideo.com
-  - DOMAIN-SUFFIX,hulu.com
-  - DOMAIN-SUFFIX,hulu.ru
+  # Apple TV+ (Внимание: может задеть AppStore)
+  - DOMAIN-SUFFIX,appletv.com
+  - DOMAIN-SUFFIX,apple.com
+  - DOMAIN-SUFFIX,tv.apple.com
+  # Others
   - DOMAIN-SUFFIX,paramount.com
   - DOMAIN-SUFFIX,paramountplus.com
   - DOMAIN-SUFFIX,showtime.com
   - DOMAIN-SUFFIX,peacocktv.com
   - DOMAIN-SUFFIX,nbc.com
-  - DOMAIN-SUFFIX,appletv.com
-  - DOMAIN-SUFFIX,apple.com
-  - DOMAIN-SUFFIX,tv.apple.com
-  # Social media and communication platforms blocked in Russia
-  - DOMAIN-SUFFIX,facebook.com
-  - DOMAIN-SUFFIX,fb.com
-  - DOMAIN-SUFFIX,instagram.com
-  - DOMAIN-SUFFIX,twitter.com
-  - DOMAIN-SUFFIX,x.com
-  - DOMAIN-SUFFIX,tiktok.com
-  - DOMAIN-SUFFIX,tiktok.ru
-  - DOMAIN-SUFFIX,linkedin.com
-  - DOMAIN-SUFFIX,snapchat.com
-  - DOMAIN-SUFFIX,pinterest.com
-  - DOMAIN-SUFFIX,reddit.com
-  - DOMAIN-SUFFIX,redd.it
-  - DOMAIN-SUFFIX,discord.com
-  - DOMAIN-SUFFIX,discord.gg
-  - DOMAIN-SUFFIX,discordapp.com
-  - DOMAIN-SUFFIX,signal.org
-  # Other blocked services
+
+  # ==========================================
+  # 3. АНИМЕ РЕСУРСЫ
+  # ==========================================
+  - DOMAIN-SUFFIX,crunchyroll.com
+  - DOMAIN-SUFFIX,funimation.com
+  - DOMAIN-SUFFIX,wakanim.tv
+  - DOMAIN-SUFFIX,9anime.to
+  - DOMAIN-SUFFIX,9anime.id
+  - DOMAIN-SUFFIX,animepahe.com
+  - DOMAIN-SUFFIX,gogoanime.sk
+  - DOMAIN-SUFFIX,gogoanime.io
+  - DOMAIN-SUFFIX,animekisa.tv
+  - DOMAIN-SUFFIX,zoro.to
+  - DOMAIN-SUFFIX,animeout.xyz
+  - DOMAIN-SUFFIX,yummianime.com
+  - DOMAIN-SUFFIX,animego.org
+  - DOMAIN-SUFFIX,myanimelist.net
+  - DOMAIN-SUFFIX,jut.su
+  - DOMAIN-SUFFIX,animeclub.tv
+  - DOMAIN-SUFFIX,wikianime.tv
+
+  # ==========================================
+  # 4. ЗАПАДНЫЕ СМИ (NEWS)
+  # ==========================================
   - DOMAIN-SUFFIX,bbc.com
   - DOMAIN-SUFFIX,bbc.co.uk
-  - DOMAIN-SUFFIX,bbcnews.com
   - DOMAIN-SUFFIX,cnn.com
-  - DOMAIN-SUFFIX,cnn.ru
   - DOMAIN-SUFFIX,nytimes.com
   - DOMAIN-SUFFIX,washingtonpost.com
   - DOMAIN-SUFFIX,theguardian.com
@@ -87,98 +97,60 @@ payload:
   - DOMAIN-SUFFIX,bloomberg.com
   - DOMAIN-SUFFIX,wsj.com
   - DOMAIN-SUFFIX,economist.com
+  - DOMAIN-SUFFIX,dw.com
+  - DOMAIN-SUFFIX,meduza.io
 
-  ## Процессы (названия приложений)
-  # Мессенджеры
-  - PROCESS-NAME,Telegram.exe
-  - PROCESS-NAME,Telegram
-  # AI Software Group
+  # ==========================================
+  # 5. ПРОЦЕССЫ - AI И РАЗРАБОТКА
+  # ==========================================
+  # AI IDE & Assistants (Cursor, Copilot, Windsurf)
   - PROCESS-NAME,Cursor.exe
   - PROCESS-NAME,Cursor
-  - PROCESS-NAME,cursor.exe
-  - PROCESS-NAME,ChatGPT.exe
-  - PROCESS-NAME,ChatGPT
-  - PROCESS-NAME,chatgpt.exe
-  - PROCESS-NAME,OpenAI.exe
-  - PROCESS-NAME,OpenAI
-  - PROCESS-NAME,openai.exe
-  - PROCESS-NAME,Claude.exe
-  - PROCESS-NAME,Claude
-  - PROCESS-NAME,claude.exe
-  - PROCESS-NAME,Anthropic.exe
-  - PROCESS-NAME,Anthropic
-  - PROCESS-NAME,anthropic.exe
-  - PROCESS-NAME,Gemini.exe
-  - PROCESS-NAME,Gemini
-  - PROCESS-NAME,gemini.exe
-  - PROCESS-NAME,GoogleGemini.exe
-  - PROCESS-NAME,GoogleGemini
-  - PROCESS-NAME,Perplexity.exe
-  - PROCESS-NAME,Perplexity
-  - PROCESS-NAME,perplexity.exe
-  - PROCESS-NAME,Copilot.exe
-  - PROCESS-NAME,Copilot
-  - PROCESS-NAME,copilot.exe
-  - PROCESS-NAME,GitHubCopilot.exe
-  - PROCESS-NAME,GitHubCopilot
-  - PROCESS-NAME,github-copilot.exe
-  - PROCESS-NAME,MicrosoftCopilot.exe
-  - PROCESS-NAME,MicrosoftCopilot
-  - PROCESS-NAME,microsoft-copilot.exe
-  - PROCESS-NAME,Codeium.exe
-  - PROCESS-NAME,Codeium
-  - PROCESS-NAME,codeium.exe
-  - PROCESS-NAME,Tabnine.exe
-  - PROCESS-NAME,Tabnine
-  - PROCESS-NAME,tabnine.exe
-  - PROCESS-NAME,CodeWhisperer.exe
-  - PROCESS-NAME,CodeWhisperer
-  - PROCESS-NAME,code-whisperer.exe
-  - PROCESS-NAME,Midjourney.exe
-  - PROCESS-NAME,Midjourney
-  - PROCESS-NAME,midjourney.exe
-  - PROCESS-NAME,StableDiffusion.exe
-  - PROCESS-NAME,StableDiffusion
-  - PROCESS-NAME,stable-diffusion.exe
-  - PROCESS-NAME,ComfyUI.exe
-  - PROCESS-NAME,ComfyUI
-  - PROCESS-NAME,comfyui.exe
-  - PROCESS-NAME,Automatic1111.exe
-  - PROCESS-NAME,Automatic1111
-  - PROCESS-NAME,automatic1111.exe
-  - PROCESS-NAME,Ollama.exe
-  - PROCESS-NAME,Ollama
-  - PROCESS-NAME,ollama.exe
-  - PROCESS-NAME,LMStudio.exe
-  - PROCESS-NAME,LMStudio
-  - PROCESS-NAME,lm-studio.exe
-  - PROCESS-NAME,LM Studio.exe
-  - PROCESS-NAME,LM Studio
-  - PROCESS-NAME,Jan.exe
-  - PROCESS-NAME,Jan
-  - PROCESS-NAME,jan.exe
-  - PROCESS-NAME,Continue.exe
-  - PROCESS-NAME,Continue
-  - PROCESS-NAME,continue.exe
   - PROCESS-NAME,Windsurf.exe
   - PROCESS-NAME,Windsurf
-  - PROCESS-NAME,windsurf.exe
   - PROCESS-NAME,Cline.exe
   - PROCESS-NAME,Cline
-  - PROCESS-NAME,cline.exe
-  - PROCESS-NAME,CodeGPT.exe
-  - PROCESS-NAME,CodeGPT
-  - PROCESS-NAME,code-gpt.exe
+  - PROCESS-NAME,Copilot.exe
+  - PROCESS-NAME,GitHubCopilot.exe
+  - PROCESS-NAME,MicrosoftCopilot.exe
+  - PROCESS-NAME,Codeium.exe
+  - PROCESS-NAME,Tabnine.exe
+  - PROCESS-NAME,CodeWhisperer.exe
   - PROCESS-NAME,Sourcegraph.exe
-  - PROCESS-NAME,Sourcegraph
-  - PROCESS-NAME,sourcegraph.exe
   - PROCESS-NAME,Cody.exe
-  - PROCESS-NAME,Cody
-  - PROCESS-NAME,cody.exe
+  - PROCESS-NAME,CodeGPT.exe
 
-  ## Полные пути (только для ПК)
+  # LLM Desktop Clients (ChatGPT, Claude)
+  - PROCESS-NAME,ChatGPT.exe
+  - PROCESS-NAME,ChatGPT
+  - PROCESS-NAME,OpenAI.exe
+  - PROCESS-NAME,Claude.exe
+  - PROCESS-NAME,Claude
+  - PROCESS-NAME,Anthropic.exe
+  - PROCESS-NAME,Gemini.exe
+  - PROCESS-NAME,GoogleGemini.exe
+  - PROCESS-NAME,Perplexity.exe
+
+  # Local AI & Generators (Ollama, Stable Diffusion)
+  # Часто требуют VPN для скачивания моделей
+  - PROCESS-NAME,Ollama.exe
+  - PROCESS-NAME,Ollama
+  - PROCESS-NAME,LMStudio.exe
+  - PROCESS-NAME,LM Studio.exe
+  - PROCESS-NAME,Jan.exe
+  - PROCESS-NAME,Continue.exe
+  - PROCESS-NAME,Midjourney.exe
+  - PROCESS-NAME,StableDiffusion.exe
+  - PROCESS-NAME,ComfyUI.exe
+  - PROCESS-NAME,Automatic1111.exe
+
+  # ==========================================
+  # 6. ПРОЦЕССЫ - МЕССЕНДЖЕРЫ (Если нужен VPN)
+  # ==========================================
+  - PROCESS-NAME,Telegram.exe
+  - PROCESS-NAME,Telegram
+  
+  # ==========================================
+  # 7. СПЕЦИАЛЬНЫЕ ПУТИ (macOS)
+  # ==========================================
   - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
-
-  ## IP и порты
-  - IP-CIDR,192.168.1.0/24,no-resolve
-  - DST-PORT,8080
