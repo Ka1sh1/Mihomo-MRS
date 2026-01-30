@@ -13,32 +13,34 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Mihomo Tool
+      - name: Setup Mihomo
         run: |
-          # 1. Скачиваем архив (обрати внимание на .gz в конце)
-          curl -L -o mihomo-tool.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9.gz
+          # 1. Скачиваем официальное ядро (v1.18.9)
+          curl -L -o mihomo.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9.gz
           
-          # 2. Распаковываем
-          gunzip mihomo-tool.gz
+          # 2. Распаковываем с флагом -f (force), чтобы не зависало на вопросах
+          gunzip -f mihomo.gz
           
-          # 3. Делаем исполняемым
-          chmod +x mihomo-tool
+          # 3. Даем права на запуск
+          chmod +x mihomo
           
-          # 4. Проверка: выводим версию, чтобы убедиться, что это программа
-          ./mihomo-tool -v
+          # 4. Проверка (должно вывести версию)
+          ./mihomo -v
 
       - name: Compile MRS
         run: |
           mkdir -p publish
-          # Компилируем
-          ./mihomo-tool ruleset compile-text rules/direct.yaml publish/direct.mrs
-          ./mihomo-tool ruleset compile-text rules/proxy.yaml publish/proxy.mrs
+          # Используем команду convert-ruleset из основного ядра
+          ./mihomo ruleset compile rules/direct.yaml publish/direct.mrs
+          ./mihomo ruleset compile rules/proxy.yaml publish/proxy.mrs
+          
+          # Проверка результата
+          ls -la publish/
 
       - name: Commit and Push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add publish/*.mrs
-          # Если изменений нет, не падаем с ошибкой
           git commit -m "Update binary rulesets" || echo "No changes to commit"
           git push
