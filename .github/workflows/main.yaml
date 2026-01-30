@@ -13,16 +13,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Download Mihomo Tool
+      - name: Setup Mihomo Tool
         run: |
-          curl -L -o mihomo-tool https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9
-          chmod +x ./mihomo-tool
-          # Проверка, что это не пустой файл или HTML
-          ls -l ./mihomo-tool
+          # 1. Скачиваем архив (обрати внимание на .gz в конце)
+          curl -L -o mihomo-tool.gz https://github.com/MetaCubeX/mihomo/releases/download/v1.18.9/mihomo-linux-amd64-v1.18.9.gz
+          
+          # 2. Распаковываем
+          gunzip mihomo-tool.gz
+          
+          # 3. Делаем исполняемым
+          chmod +x mihomo-tool
+          
+          # 4. Проверка: выводим версию, чтобы убедиться, что это программа
+          ./mihomo-tool -v
 
       - name: Compile MRS
         run: |
           mkdir -p publish
+          # Компилируем
           ./mihomo-tool ruleset compile-text rules/direct.yaml publish/direct.mrs
           ./mihomo-tool ruleset compile-text rules/proxy.yaml publish/proxy.mrs
 
@@ -31,5 +39,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add publish/*.mrs
-          git commit -m "Update binary rulesets" || exit 0
+          # Если изменений нет, не падаем с ошибкой
+          git commit -m "Update binary rulesets" || echo "No changes to commit"
           git push
