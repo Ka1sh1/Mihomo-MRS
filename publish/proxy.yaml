@@ -1,5 +1,34 @@
 payload:
   # ==========================================
+  # 0. DOMAIN-KEYWORD — сервисы, блокирующие РФ (приоритет)
+  # ==========================================
+  - DOMAIN-KEYWORD,openai
+  - DOMAIN-KEYWORD,anthropic
+  - DOMAIN-KEYWORD,claude
+  - DOMAIN-KEYWORD,chatgpt
+  - DOMAIN-KEYWORD,github
+  - DOMAIN-KEYWORD,stripe
+  - DOMAIN-KEYWORD,figma
+  - DOMAIN-KEYWORD,notion
+  - DOMAIN-KEYWORD,dropbox
+  - DOMAIN-KEYWORD,spotify
+  - DOMAIN-KEYWORD,twitch
+  - DOMAIN-KEYWORD,cloudflare
+  - DOMAIN-KEYWORD,discord
+  - DOMAIN-KEYWORD,slack
+  - DOMAIN-KEYWORD,atlassian
+  - DOMAIN-KEYWORD,jira
+  - DOMAIN-KEYWORD,confluence
+  - DOMAIN-KEYWORD,linear
+  - DOMAIN-KEYWORD,vercel
+  - DOMAIN-KEYWORD,netlify
+  - DOMAIN-KEYWORD,replit
+  - DOMAIN-KEYWORD,cursor
+  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,perplexity
+
+  # ==========================================
   # 1. СОЦИАЛЬНЫЕ СЕТИ И МЕССЕНДЖЕРЫ
   # ==========================================
   # Meta & Instagram
