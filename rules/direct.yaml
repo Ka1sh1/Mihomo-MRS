@@ -15,6 +15,8 @@ payload:
   - DOMAIN-KEYWORD,vk
   - DOMAIN-KEYWORD,vkontakte
   - DOMAIN-KEYWORD,odnoklassniki
+  - DOMAIN-KEYWORD,yummyanime
+  - DOMAIN-KEYWORD,yummy-anime
   - DOMAIN-KEYWORD,mail.ru
   - DOMAIN-KEYWORD,avito
   - DOMAIN-KEYWORD,ozon
