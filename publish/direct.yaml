@@ -223,6 +223,7 @@ payload:
   # Кинотеатры
   - DOMAIN-SUFFIX,ivi.ru
   - DOMAIN-SUFFIX,okko.tv
+  - DOMAIN-SUFFIX,site.yummyani.me
   - DOMAIN-SUFFIX,okko.ru
   - DOMAIN-SUFFIX,more.tv
   - DOMAIN-SUFFIX,premier.one
