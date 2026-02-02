@@ -335,3 +335,19 @@ payload:
   - IP-CIDR,10.0.0.0/8,no-resolve
   - IP-CIDR,172.16.0.0/12,no-resolve
   - DST-PORT,8080
+
+  # ==========================================
+  # 9. СИСТЕМНЫЕ СЕРВИСЫ (ОСТАВИТЬ В DIRECT!)
+  # ==========================================
+  # NTP (Синхронизация времени Windows/Apple/Android)
+  - DST-PORT,123
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,time.windows.com
+  - DOMAIN-SUFFIX,time.apple.com
+  - DOMAIN-SUFFIX,time.google.com
+
+  # Проверка подключения (Чтобы работал Wi-Fi в метро/кафе)
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN-SUFFIX,captive.apple.com
+  - DOMAIN-SUFFIX,connectivitycheck.gstatic.com
