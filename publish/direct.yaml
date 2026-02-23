@@ -1,0 +1,345 @@
+payload:
+  # ==========================================
+  # 0. DOMAIN-KEYWORD (приоритет)
+  # ==========================================
+  - DOMAIN-KEYWORD,gosuslugi
+  - DOMAIN-KEYWORD,roskomnadzor
+  - DOMAIN-KEYWORD,sberbank
+  - DOMAIN-KEYWORD,tinkoff
+  - DOMAIN-KEYWORD,vtb
+  - DOMAIN-KEYWORD,alfabank
+  - DOMAIN-KEYWORD,mir-card
+  - DOMAIN-KEYWORD,yoomoney
+  - DOMAIN-KEYWORD,yandex
+  - DOMAIN-KEYWORD,яндекс
+  - DOMAIN-KEYWORD,vk
+  - DOMAIN-KEYWORD,vkontakte
+  - DOMAIN-KEYWORD,odnoklassniki
+  - DOMAIN-KEYWORD,yummyani
+  - DOMAIN-KEYWORD,yummyanime
+  - DOMAIN-KEYWORD,yummy-anime
+  - DOMAIN-KEYWORD,mail.ru
+  - DOMAIN-KEYWORD,avito
+  - DOMAIN-KEYWORD,ozon
+  - DOMAIN-KEYWORD,wildberries
+  - DOMAIN-KEYWORD,cian
+  - DOMAIN-KEYWORD,remanga
+  - DOMAIN-KEYWORD,reimg
+  - DOMAIN-KEYWORD,qiwi
+  - DOMAIN-KEYWORD,dzen
+  - DOMAIN-KEYWORD,hh.ru
+  - DOMAIN-KEYWORD,sbermegamarket
+  - DOMAIN-KEYWORD,sberzvuk
+  - DOMAIN-KEYWORD,samokat
+  - DOMAIN-KEYWORD,cdek
+  - DOMAIN-KEYWORD,boxberry
+  - DOMAIN-KEYWORD,kontur
+  - DOMAIN-KEYWORD,sbis
+  - DOMAIN-KEYWORD,1c.ru
+  - DOMAIN-KEYWORD,kaspersky
+  - DOMAIN-KEYWORD,rutube
+  - DOMAIN-KEYWORD,ivi
+  - DOMAIN-KEYWORD,okko
+  - DOMAIN-KEYWORD,2gis
+
+  # ==========================================
+  # 1. ГОСУДАРСТВЕННЫЕ СЕРВИСЫ РФ
+  # ==========================================
+  - DOMAIN-SUFFIX,gosuslugi.ru
+  - DOMAIN-SUFFIX,gosuslugi.com
+  - DOMAIN-SUFFIX,nalog.ru
+  - DOMAIN-SUFFIX,nalog.gov.ru
+  - DOMAIN-SUFFIX,gov.ru
+  - DOMAIN-SUFFIX,government.ru
+  - DOMAIN-SUFFIX,kremlin.ru
+  - DOMAIN-SUFFIX,president.ru
+  - DOMAIN-SUFFIX,duma.gov.ru
+  - DOMAIN-SUFFIX,council.gov.ru
+  - DOMAIN-SUFFIX,minfin.gov.ru
+  - DOMAIN-SUFFIX,fns.gov.ru
+  - DOMAIN-SUFFIX,fssp.gov.ru
+  - DOMAIN-SUFFIX,rosreestr.gov.ru
+  - DOMAIN-SUFFIX,roskomnadzor.gov.ru
+  - DOMAIN-SUFFIX,rkn.gov.ru
+  - DOMAIN-SUFFIX,pfr.gov.ru
+  - DOMAIN-SUFFIX,fss.ru
+  - DOMAIN-SUFFIX,mvd.gov.ru
+  - DOMAIN-SUFFIX,fsb.ru
+  - DOMAIN-SUFFIX,fsin.gov.ru
+  - DOMAIN-SUFFIX,rosgvard.ru
+  - DOMAIN-SUFFIX,minzdrav.gov.ru
+  - DOMAIN-SUFFIX,roszdravnadzor.gov.ru
+  - DOMAIN-SUFFIX,rospotrebnadzor.ru
+  - DOMAIN-SUFFIX,minobrnauki.gov.ru
+  - DOMAIN-SUFFIX,edu.gov.ru
+  - DOMAIN-SUFFIX,mos.ru
+  - DOMAIN-SUFFIX,spb.gov.ru
+  - DOMAIN-SUFFIX,crpt.ru
+  - DOMAIN-SUFFIX,customs.gov.ru
+  - DOMAIN-SUFFIX,fts.gov.ru
+
+  # ==========================================
+  # 2. БАНКИ И ФИНАНСЫ (РФ)
+  # ==========================================
+  # Сбербанк
+  - DOMAIN-SUFFIX,sberbank.ru
+  - DOMAIN-SUFFIX,sber.ru
+  - DOMAIN-SUFFIX,sbrf.ru
+  # Тинькофф (Т-Банк)
+  - DOMAIN-SUFFIX,tinkoff.ru
+  - DOMAIN-SUFFIX,tcsbank.ru
+  # ВТБ
+  - DOMAIN-SUFFIX,vtb.ru
+  - DOMAIN-SUFFIX,vtb24.ru
+  # Альфа
+  - DOMAIN-SUFFIX,alfabank.ru
+  - DOMAIN-SUFFIX,alfa.ru
+  # Другие банки
+  - DOMAIN-SUFFIX,gazprombank.ru
+  - DOMAIN-SUFFIX,gpb.ru
+  - DOMAIN-SUFFIX,raiffeisen.ru
+  - DOMAIN-SUFFIX,raiffeisenbank.ru
+  - DOMAIN-SUFFIX,rsb.ru
+  - DOMAIN-SUFFIX,rosbank.ru
+  - DOMAIN-SUFFIX,otkritie.ru
+  - DOMAIN-SUFFIX,open.ru
+  - DOMAIN-SUFFIX,uralsib.ru
+  - DOMAIN-SUFFIX,akbars.ru
+  - DOMAIN-SUFFIX,akbarsbank.ru
+  - DOMAIN-SUFFIX,mkb.ru
+  - DOMAIN-SUFFIX,creditbank.ru
+  - DOMAIN-SUFFIX,psbank.ru
+  - DOMAIN-SUFFIX,psb.ru
+  - DOMAIN-SUFFIX,binbank.ru
+  - DOMAIN-SUFFIX,pochtabank.ru
+  # Платежные системы
+  - DOMAIN-SUFFIX,qiwi.ru
+  - DOMAIN-SUFFIX,qiwi.com
+  - DOMAIN-SUFFIX,yoomoney.ru
+  - DOMAIN-SUFFIX,yoomoney.com
+  - DOMAIN-SUFFIX,yandex.money
+  - DOMAIN-SUFFIX,mir-card.ru
+  - DOMAIN-SUFFIX,nspk.ru
+  - DOMAIN-SUFFIX,sbp.nspk.ru
+  - DOMAIN-SUFFIX,sovcombank.ru
+  - DOMAIN-SUFFIX,domrf.ru
+  - DOMAIN-SUFFIX,tbank.ru
+
+  # ==========================================
+  # 3. ЭКОСИСТЕМЫ И СОЦСЕТИ (VK, YANDEX, MAIL)
+  # ==========================================
+  # Yandex (Keyword ловит большинство, Suffix для приоритета)
+  - DOMAIN-SUFFIX,yandex.ru
+  - DOMAIN-SUFFIX,yandex.com
+  - DOMAIN-SUFFIX,yandex.net
+  - DOMAIN-SUFFIX,ya.ru
+  - DOMAIN-SUFFIX,kinopoisk.ru
+  - DOMAIN-SUFFIX,market.yandex.ru
+  - DOMAIN-SUFFIX,beru.ru
+  - DOMAIN-SUFFIX,yandex.taxi
+  - DOMAIN-SUFFIX,yandex.drive
+  - DOMAIN-SUFFIX,yandex.cloud
+  - DOMAIN-SUFFIX,disk.yandex.ru
+  - DOMAIN-SUFFIX,music.yandex.ru
+  - DOMAIN-SUFFIX,yastatic.net
+  - DOMAIN-SUFFIX,dzen.ru
+  - DOMAIN-SUFFIX,eda.yandex.ru
+  - DOMAIN-SUFFIX,lavka.yandex.ru
+  # VK & Mail.ru
+  - DOMAIN-SUFFIX,vk.com
+  - DOMAIN-SUFFIX,vk.ru
+  - DOMAIN-SUFFIX,vkontakte.ru
+  - DOMAIN-SUFFIX,vk.me
+  - DOMAIN-SUFFIX,userapi.com
+  - DOMAIN-SUFFIX,vk-cdn.net
+  - DOMAIN-SUFFIX,vk-cdn.org
+  - DOMAIN-SUFFIX,vk-cdn.ru
+  - DOMAIN-SUFFIX,vkuser.net
+  - DOMAIN-SUFFIX,vkuseraudio.net
+  - DOMAIN-SUFFIX,mail.ru
+  - DOMAIN-SUFFIX,my.mail.ru
+  - DOMAIN-SUFFIX,ok.ru
+  - DOMAIN-SUFFIX,odnoklassniki.ru
+
+  # ==========================================
+  # 4. МАРКЕТПЛЕЙСЫ И СЕРВИСЫ
+  # ==========================================
+  - DOMAIN-SUFFIX,avito.ru
+  - DOMAIN-SUFFIX,avito.com
+  - DOMAIN-SUFFIX,cian.ru
+  - DOMAIN-SUFFIX,cian.com
+  - DOMAIN-SUFFIX,youla.ru
+  - DOMAIN-SUFFIX,youla.io
+  - DOMAIN-SUFFIX,ozon.ru
+  - DOMAIN-SUFFIX,ozon.com
+  - DOMAIN-SUFFIX,wildberries.ru
+  - DOMAIN-SUFFIX,wildberries.com
+  - DOMAIN-SUFFIX,2gis.ru
+  - DOMAIN-SUFFIX,2gis.com
+  - DOMAIN-SUFFIX,2ip.ru
+  # Ритейл и доставка
+  - DOMAIN-SUFFIX,sbermegamarket.ru
+  - DOMAIN-SUFFIX,lamoda.ru
+  - DOMAIN-SUFFIX,dns-shop.ru
+  - DOMAIN-SUFFIX,citilink.ru
+  - DOMAIN-SUFFIX,mvideo.ru
+  - DOMAIN-SUFFIX,eldorado.ru
+  - DOMAIN-SUFFIX,goods.ru
+  - DOMAIN-SUFFIX,samokat.ru
+  - DOMAIN-SUFFIX,sbermarket.ru
+  - DOMAIN-SUFFIX,deliveryclub.ru
+  - DOMAIN-SUFFIX,cdek.ru
+  - DOMAIN-SUFFIX,boxberry.ru
+  - DOMAIN-SUFFIX,dpd.ru
+  # Работа
+  - DOMAIN-SUFFIX,hh.ru
+  - DOMAIN-SUFFIX,hh.net
+  - DOMAIN-SUFFIX,superjob.ru
+  # Бизнес и ЭДО
+  - DOMAIN-SUFFIX,kontur.ru
+  - DOMAIN-SUFFIX,sbis.ru
+  - DOMAIN-SUFFIX,1c.ru
+  - DOMAIN-SUFFIX,v8.1c.ru
+  # Безопасность
+  - DOMAIN-SUFFIX,kaspersky.ru
+  - DOMAIN-SUFFIX,kaspersky.com
+
+  # ==========================================
+  # 5. МЕДИА И ОПЕРАТОРЫ СВЯЗИ
+  # ==========================================
+  - DOMAIN-SUFFIX,rutube.ru
+  - DOMAIN-SUFFIX,rutube.com
+  - DOMAIN-SUFFIX,1tv.ru
+  - DOMAIN-SUFFIX,ntv.ru
+  - DOMAIN-SUFFIX,ren.tv
+  - DOMAIN-SUFFIX,tass.ru
+  - DOMAIN-SUFFIX,ria.ru
+  - DOMAIN-SUFFIX,interfax.ru
+  - DOMAIN-SUFFIX,lenta.ru
+  - DOMAIN-SUFFIX,gazeta.ru
+  - DOMAIN-SUFFIX,kommersant.ru
+  - DOMAIN-SUFFIX,vedomosti.ru
+  - DOMAIN-SUFFIX,rbc.ru
+  # Кинотеатры
+  - DOMAIN-SUFFIX,ivi.ru
+  - DOMAIN-SUFFIX,okko.tv
+  - DOMAIN-SUFFIX,yummyani.me
+  - DOMAIN-SUFFIX,okko.ru
+  - DOMAIN-SUFFIX,more.tv
+  - DOMAIN-SUFFIX,premier.one
+  - DOMAIN-SUFFIX,start.ru
+  - DOMAIN-SUFFIX,smotrim.ru
+  - DOMAIN-SUFFIX,russia.tv
+  - DOMAIN-SUFFIX,sber-zvuk.ru
+  - DOMAIN-SUFFIX,timeout.ru
+  - DOMAIN-SUFFIX,championat.com
+  - DOMAIN-SUFFIX,sports.ru
+  - DOMAIN-SUFFIX,matchtv.ru
+  # Операторы
+  - DOMAIN-SUFFIX,megafon.ru
+  - DOMAIN-SUFFIX,mts.ru
+  - DOMAIN-SUFFIX,tele2.ru
+  - DOMAIN-SUFFIX,beeline.ru
+  - DOMAIN-SUFFIX,yota.ru
+  - DOMAIN-SUFFIX,rostelecom.ru
+  - DOMAIN-SUFFIX,rt.ru
+  - DOMAIN-SUFFIX,domru.ru
+  # Образование (РФ)
+  - DOMAIN-SUFFIX,stepik.org
+  - DOMAIN-SUFFIX,foxford.ru
+  - DOMAIN-SUFFIX,skillbox.ru
+  - DOMAIN-SUFFIX,netology.ru
+  - DOMAIN-SUFFIX,geekbrains.ru
+
+  # ==========================================
+  # 6. STEAM (DIRECT)
+  # ==========================================
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,steam-chat.com
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steam-api.com
+  - DOMAIN-SUFFIX,steamdb.info
+  - DOMAIN-SUFFIX,steamstat.us
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,steam.ru
+
+  # ==========================================
+  # 7. ПРОЦЕССЫ (WINDOWS & MACOS)
+  # ==========================================
+  # Мессенджеры
+  - PROCESS-NAME,Telegram.exe
+  - PROCESS-NAME,Telegram
+  
+  # Steam Client & Services
+  - PROCESS-NAME,Steam.exe
+  - PROCESS-NAME,steam.exe
+  - PROCESS-NAME,Steam
+  - PROCESS-NAME,SteamService.exe
+  - PROCESS-NAME,steamservice
+  - PROCESS-NAME,steamerrorreporter.exe
+  - PROCESS-NAME,gameoverlayui.exe
+  - PROCESS-NAME,gameoverlayrenderer.exe
+  
+  # Game Launchers
+  - PROCESS-NAME,Battle.net.exe
+  - PROCESS-NAME,EpicGamesLauncher.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,EAApp.exe
+  - PROCESS-NAME,EADesktop.exe
+  - PROCESS-NAME,Origin.exe
+  
+  # Popular Games
+  - PROCESS-NAME,Dota2.exe
+  - PROCESS-NAME,dota2.exe
+  - PROCESS-NAME,CS2.exe
+  - PROCESS-NAME,cs2.exe
+  - PROCESS-NAME,csgo.exe
+  - PROCESS-NAME,FortniteClient-Win64-Shipping.exe
+  - PROCESS-NAME,Fortnite.exe
+  - PROCESS-NAME,RocketLeague.exe
+  - PROCESS-NAME,ApexLegends.exe
+  - PROCESS-NAME,r5apex.exe
+  - PROCESS-NAME,Overwatch.exe
+  - PROCESS-NAME,LeagueOfLegends.exe
+  - PROCESS-NAME,GenshinImpact.exe
+  - PROCESS-NAME,HonkaiStarRail.exe
+  - PROCESS-NAME,StarRail.exe
+  - PROCESS-NAME,VRChat.exe
+  
+  # Russian Games
+  - PROCESS-NAME,WorldOfTanks.exe
+  - PROCESS-NAME,WorldOfTanksBlitz.exe
+  - PROCESS-NAME,WorldOfWarships.exe
+  - PROCESS-NAME,WarThunder.exe
+  - PROCESS-NAME,Warface.exe
+  - PROCESS-NAME,AtomicHeart.exe
+  - PROCESS-NAME,PathfinderKingmaker.exe
+  - PROCESS-NAME,RogueTrader.exe
+
+  # ==========================================
+  # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
+  # ==========================================
+  # Пути (macOS specific)
+  - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
+  
+  # Локальная сеть и порты
+  - IP-CIDR,192.168.0.0/16,no-resolve
+  - IP-CIDR,10.0.0.0/8,no-resolve
+  - IP-CIDR,172.16.0.0/12,no-resolve
+  - DST-PORT,8080
+
+  # ==========================================
+  # 9. СИСТЕМНЫЕ СЕРВИСЫ (ОСТАВИТЬ В DIRECT!)
+  # ==========================================
+  # NTP (Синхронизация времени Windows/Apple/Android)
+  - DST-PORT,123
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,time.windows.com
+  - DOMAIN-SUFFIX,time.apple.com
+  - DOMAIN-SUFFIX,time.google.com
+
+  # Проверка подключения (Чтобы работал Wi-Fi в метро/кафе)
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN-SUFFIX,captive.apple.com
+  - DOMAIN-SUFFIX,connectivitycheck.gstatic.com
