@@ -184,13 +184,23 @@ payload:
   - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
 
   # ==========================================
-  # 8. STEAM STORE & IMAGES (ПРОКСИ)
+  # 8. STEAM (STORE, MEDIA, COMMUNITY) - ПРОКСИ
   # ==========================================
+  # Эти домены нужны для загрузки картинок, видео и работы магазина без задержек.
+
+  # Магазин и авторизация
   - DOMAIN-SUFFIX,steampowered.com
+  # Сообщество (Мастерская, профили, торговая площадка)
   - DOMAIN-SUFFIX,steamcommunity.com
+  # Картинки, превью, видео на страницах игр
   - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steamgames.com         # Часто используется как CDN для медиа
+  # Аватарки и скриншоты пользователей
   - DOMAIN-SUFFIX,steamusercontent.com
   - DOMAIN-SUFFIX,steamuserimages.com
+  # Чат и социальные функции
+  - DOMAIN-SUFFIX,steam-chat.com
+  # Внутренний браузер (отвечает за отрисовку магазина)
   - PROCESS-NAME,steamwebhelper.exe
   - PROCESS-NAME,SteamWebHelper.exe
   - PROCESS-NAME,steamwebhelper

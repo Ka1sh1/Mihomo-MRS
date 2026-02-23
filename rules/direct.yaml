@@ -252,13 +252,13 @@ payload:
   - DOMAIN-SUFFIX,geekbrains.ru
 
   # ==========================================
-  # 6. STEAM (DIRECT)
+  # 6. STEAM (DOWNLOADS ONLY) - DIRECT
   # ==========================================
+  # Эти домены используются только для скачивания самих файлов игр и обновлений.
+
+  # Главные серверы для загрузки контента
   - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steam-chat.com
-  - DOMAIN-SUFFIX,steamgames.com
   - DOMAIN-SUFFIX,steam-api.com
-  - DOMAIN-SUFFIX,steamdb.info
   - DOMAIN-SUFFIX,steamstat.us
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steam.ru
