@@ -25,7 +25,6 @@ payload:
   - DOMAIN-KEYWORD,cian
   - DOMAIN-KEYWORD,remanga
   - DOMAIN-KEYWORD,reimg
-  - DOMAIN-KEYWORD,steam
   - DOMAIN-KEYWORD,qiwi
   - DOMAIN-KEYWORD,dzen
   - DOMAIN-KEYWORD,hh.ru
@@ -255,14 +254,9 @@ payload:
   # ==========================================
   # 6. STEAM (DIRECT)
   # ==========================================
-  - DOMAIN-SUFFIX,steampowered.com
-  - DOMAIN-SUFFIX,steamcommunity.com
   - DOMAIN-SUFFIX,steamcontent.com
-  - DOMAIN-SUFFIX,steamstatic.com
   - DOMAIN-SUFFIX,steam-chat.com
   - DOMAIN-SUFFIX,steamgames.com
-  - DOMAIN-SUFFIX,steamusercontent.com
-  - DOMAIN-SUFFIX,steamuserimages.com
   - DOMAIN-SUFFIX,steam-api.com
   - DOMAIN-SUFFIX,steamdb.info
   - DOMAIN-SUFFIX,steamstat.us
@@ -280,8 +274,6 @@ payload:
   - PROCESS-NAME,Steam.exe
   - PROCESS-NAME,steam.exe
   - PROCESS-NAME,Steam
-  - PROCESS-NAME,steamwebhelper.exe
-  - PROCESS-NAME,steamwebhelper
   - PROCESS-NAME,SteamService.exe
   - PROCESS-NAME,steamservice
   - PROCESS-NAME,steamerrorreporter.exe

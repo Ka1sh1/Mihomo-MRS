@@ -184,6 +184,19 @@ payload:
   - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
 
   # ==========================================
+  # 8. STEAM STORE & IMAGES (ПРОКСИ)
+  # ==========================================
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steamstatic.com
+  - DOMAIN-SUFFIX,steamusercontent.com
+  - DOMAIN-SUFFIX,steamuserimages.com
+  - PROCESS-NAME,steamwebhelper.exe
+  - PROCESS-NAME,SteamWebHelper.exe
+  - PROCESS-NAME,steamwebhelper
+  - PROCESS-NAME,SteamWebHelper
+
+  # ==========================================
   # 9. DISCORD VOICE & UDP PORTS (FIX)
   # ==========================================
   # WebRTC / STUN (Связь для звонков)
