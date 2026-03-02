@@ -315,7 +315,6 @@ payload:
   - PROCESS-NAME,AtomicHeart.exe
   - PROCESS-NAME,PathfinderKingmaker.exe
   - PROCESS-NAME,RogueTrader.exe
-  - PROCESS-NAME,Gedonia 2.exe
 
   # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
