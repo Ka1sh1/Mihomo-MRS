@@ -109,6 +109,8 @@ payload:
   - DOMAIN-SUFFIX,animego.org
   - DOMAIN-SUFFIX,myanimelist.net
   - DOMAIN-SUFFIX,jut.su
+  - DOMAIN-SUFFIX,jut-su.net
+  - DOMAIN-SUFFIX,jutsu.vip
   - DOMAIN-SUFFIX,animeclub.tv
   - DOMAIN-SUFFIX,wikianime.tv
 
