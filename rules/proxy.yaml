@@ -219,11 +219,14 @@ payload:
   - DST-PORT,50000-65535
 
   # ==========================================
-  # 10. РАЗНОЕ (ИГРЫ)
+  # ИГРЫ SUPERCELL [CLASH ROYALE, BRAWL STARS, COC]
   # ==========================================
-  # Clash Royale (Supercell)
+  - DOMAIN-KEYWORD,supercell
+  - DOMAIN-KEYWORD,clashroyale
   - DOMAIN-SUFFIX,supercell.com
+  - DOMAIN-SUFFIX,supercell.net
   - DOMAIN-SUFFIX,clashroyale.com
   - DOMAIN-SUFFIX,clashroyaleapp.com
   - DOMAIN-SUFFIX,brawlstars.com
   - DOMAIN-SUFFIX,brawlstarsgame.com
+  - DOMAIN-SUFFIX,clashofclans.com
