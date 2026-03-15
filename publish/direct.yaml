@@ -266,9 +266,7 @@ payload:
   # ==========================================
   # 7. ПРОЦЕССЫ (WINDOWS & MACOS)
   # ==========================================
-  # Мессенджеры
-  - PROCESS-NAME,Telegram.exe
-  - PROCESS-NAME,Telegram
+
   
   # Steam Client & Services
   - PROCESS-NAME,Steam.exe
@@ -319,8 +317,7 @@ payload:
   # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
   # ==========================================
-  # Пути (macOS specific)
-  - PROCESS-PATH,/Applications/Telegram.app/Contents/MacOS/Telegram
+
   
   # Локальная сеть и порты
   - IP-CIDR,192.168.0.0/16,no-resolve
