@@ -2,6 +2,7 @@ payload:
   # ==========================================
   # 0. DOMAIN-KEYWORD (приоритет)
   # ==========================================
+  - DOMAIN-KEYWORD,lesta
   - DOMAIN-KEYWORD,gosuslugi
   - DOMAIN-KEYWORD,roskomnadzor
   - DOMAIN-KEYWORD,sberbank
@@ -252,6 +253,14 @@ payload:
   - DOMAIN-SUFFIX,geekbrains.ru
 
   # ==========================================
+  # LESTA GAMES (Мир Танков, Мир Кораблей)
+  # ==========================================
+  - DOMAIN-SUFFIX,lesta.ru
+  - DOMAIN-SUFFIX,tanki.su
+  - DOMAIN-SUFFIX,korabli.su
+  - DOMAIN-SUFFIX,tanksblitz.ru
+
+  # ==========================================
   # 6. STEAM (DOWNLOADS ONLY) - DIRECT
   # ==========================================
   # Эти домены используются только для скачивания самих файлов игр и обновлений.
@@ -304,10 +313,13 @@ payload:
   - PROCESS-NAME,StarRail.exe
   - PROCESS-NAME,VRChat.exe
   
-  # Russian Games
+  # Russian Games & Lesta
+  - PROCESS-NAME,Lgc.exe
   - PROCESS-NAME,WorldOfTanks.exe
   - PROCESS-NAME,WorldOfTanksBlitz.exe
+  - PROCESS-NAME,TanksBlitz.exe
   - PROCESS-NAME,WorldOfWarships.exe
+  - PROCESS-NAME,WorldOfWarships64.exe
   - PROCESS-NAME,WarThunder.exe
   - PROCESS-NAME,Warface.exe
   - PROCESS-NAME,AtomicHeart.exe

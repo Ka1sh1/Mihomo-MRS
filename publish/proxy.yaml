@@ -215,6 +215,15 @@ payload:
   - DST-PORT,3478
   # Резервный диапазон Discord (новые серверы)
   - DST-PORT,19294-19344
-  # Основной голосовой диапазон (Игры и Discord)
   # ВАЖНО: Это правило должно быть в PROXY, чтобы обойти блокировку протоколов
   - DST-PORT,50000-65535
+
+  # ==========================================
+  # 10. РАЗНОЕ (ИГРЫ)
+  # ==========================================
+  # Clash Royale (Supercell)
+  - DOMAIN-SUFFIX,supercell.com
+  - DOMAIN-SUFFIX,clashroyale.com
+  - DOMAIN-SUFFIX,clashroyaleapp.com
+  - DOMAIN-SUFFIX,brawlstars.com
+  - DOMAIN-SUFFIX,brawlstarsgame.com
