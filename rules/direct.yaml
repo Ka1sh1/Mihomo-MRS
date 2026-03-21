@@ -278,53 +278,40 @@ payload:
 
   
   # Steam Client & Services
-  - PROCESS-NAME,Steam.exe
-  - PROCESS-NAME,steam.exe
-  - PROCESS-NAME,Steam
-  - PROCESS-NAME,SteamService.exe
-  - PROCESS-NAME,steamservice
-  - PROCESS-NAME,steamerrorreporter.exe
-  - PROCESS-NAME,gameoverlayui.exe
-  - PROCESS-NAME,gameoverlayrenderer.exe
+  - PROCESS-NAME-REGEX,(?i).*steam.*
+  - PROCESS-NAME-REGEX,(?i).*gameoverlay.*
   
   # Game Launchers
-  - PROCESS-NAME,Battle.net.exe
-  - PROCESS-NAME,EpicGamesLauncher.exe
-  - PROCESS-NAME,EpicWebHelper.exe
-  - PROCESS-NAME,EAApp.exe
-  - PROCESS-NAME,EADesktop.exe
-  - PROCESS-NAME,Origin.exe
+  - PROCESS-NAME-REGEX,(?i).*battle\.net.*
+  - PROCESS-NAME-REGEX,(?i).*epic.*
+  - PROCESS-NAME-REGEX,(?i).*eaapp.*
+  - PROCESS-NAME-REGEX,(?i).*eadesktop.*
+  - PROCESS-NAME-REGEX,(?i).*origin.*
   
   # Popular Games
-  - PROCESS-NAME,Dota2.exe
-  - PROCESS-NAME,dota2.exe
-  - PROCESS-NAME,CS2.exe
-  - PROCESS-NAME,cs2.exe
-  - PROCESS-NAME,csgo.exe
-  - PROCESS-NAME,FortniteClient-Win64-Shipping.exe
-  - PROCESS-NAME,Fortnite.exe
-  - PROCESS-NAME,RocketLeague.exe
-  - PROCESS-NAME,ApexLegends.exe
-  - PROCESS-NAME,r5apex.exe
-  - PROCESS-NAME,Overwatch.exe
-  - PROCESS-NAME,LeagueOfLegends.exe
-  - PROCESS-NAME,GenshinImpact.exe
-  - PROCESS-NAME,HonkaiStarRail.exe
-  - PROCESS-NAME,StarRail.exe
-  - PROCESS-NAME,VRChat.exe
+  - PROCESS-NAME-REGEX,(?i).*dota2.*
+  - PROCESS-NAME-REGEX,(?i).*cs2.*
+  - PROCESS-NAME-REGEX,(?i).*csgo.*
+  - PROCESS-NAME-REGEX,(?i).*fortnite.*
+  - PROCESS-NAME-REGEX,(?i).*rocketleague.*
+  - PROCESS-NAME-REGEX,(?i).*apex.*
+  - PROCESS-NAME-REGEX,(?i).*overwatch.*
+  - PROCESS-NAME-REGEX,(?i).*leagueoflegends.*
+  - PROCESS-NAME-REGEX,(?i).*genshin.*
+  - PROCESS-NAME-REGEX,(?i).*starrail.*
+  - PROCESS-NAME-REGEX,(?i).*vrchat.*
   
   # Russian Games & Lesta
-  - PROCESS-NAME,Lgc.exe
-  - PROCESS-NAME,WorldOfTanks.exe
-  - PROCESS-NAME,WorldOfTanksBlitz.exe
-  - PROCESS-NAME,TanksBlitz.exe
-  - PROCESS-NAME,WorldOfWarships.exe
-  - PROCESS-NAME,WorldOfWarships64.exe
-  - PROCESS-NAME,WarThunder.exe
-  - PROCESS-NAME,Warface.exe
-  - PROCESS-NAME,AtomicHeart.exe
-  - PROCESS-NAME,PathfinderKingmaker.exe
-  - PROCESS-NAME,RogueTrader.exe
+  - PROCESS-NAME-REGEX,(?i).*lgc.*
+  - PROCESS-NAME-REGEX,(?i).*tanki.*
+  - PROCESS-NAME-REGEX,(?i).*tank.*blitz.*
+  - PROCESS-NAME-REGEX,(?i).*worldoftanks.*
+  - PROCESS-NAME-REGEX,(?i).*worldofwarships.*
+  - PROCESS-NAME-REGEX,(?i).*warthunder.*
+  - PROCESS-NAME-REGEX,(?i).*warface.*
+  - PROCESS-NAME-REGEX,(?i).*atomicheart.*
+  - PROCESS-NAME-REGEX,(?i).*pathfinder.*
+  - PROCESS-NAME-REGEX,(?i).*roguetrader.*
 
   # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
