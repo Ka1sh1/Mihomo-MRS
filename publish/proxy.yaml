@@ -134,51 +134,40 @@ payload:
   # 5. ПРОЦЕССЫ - AI И РАЗРАБОТКА
   # ==========================================
   # AI IDE & Assistants (Cursor, Copilot, Windsurf)
-  - PROCESS-NAME,Cursor.exe
-  - PROCESS-NAME,Cursor
-  - PROCESS-NAME,Windsurf.exe
-  - PROCESS-NAME,Windsurf
-  - PROCESS-NAME,Cline.exe
-  - PROCESS-NAME,Cline
-  - PROCESS-NAME,Copilot.exe
-  - PROCESS-NAME,GitHubCopilot.exe
-  - PROCESS-NAME,MicrosoftCopilot.exe
-  - PROCESS-NAME,Codeium.exe
-  - PROCESS-NAME,Tabnine.exe
-  - PROCESS-NAME,CodeWhisperer.exe
-  - PROCESS-NAME,Sourcegraph.exe
-  - PROCESS-NAME,Cody.exe
-  - PROCESS-NAME,CodeGPT.exe
+  - PROCESS-NAME-REGEX,(?i).*cursor.*
+  - PROCESS-NAME-REGEX,(?i).*windsurf.*
+  - PROCESS-NAME-REGEX,(?i).*cline.*
+  - PROCESS-NAME-REGEX,(?i).*copilot.*
+  - PROCESS-NAME-REGEX,(?i).*codeium.*
+  - PROCESS-NAME-REGEX,(?i).*tabnine.*
+  - PROCESS-NAME-REGEX,(?i).*codewhisperer.*
+  - PROCESS-NAME-REGEX,(?i).*sourcegraph.*
+  - PROCESS-NAME-REGEX,(?i).*cody.*
+  - PROCESS-NAME-REGEX,(?i).*codegpt.*
 
   # LLM Desktop Clients (ChatGPT, Claude)
-  - PROCESS-NAME,ChatGPT.exe
-  - PROCESS-NAME,ChatGPT
-  - PROCESS-NAME,OpenAI.exe
-  - PROCESS-NAME,Claude.exe
-  - PROCESS-NAME,Claude
-  - PROCESS-NAME,Anthropic.exe
-  - PROCESS-NAME,Gemini.exe
-  - PROCESS-NAME,GoogleGemini.exe
-  - PROCESS-NAME,Perplexity.exe
+  - PROCESS-NAME-REGEX,(?i).*chatgpt.*
+  - PROCESS-NAME-REGEX,(?i).*openai.*
+  - PROCESS-NAME-REGEX,(?i).*claude.*
+  - PROCESS-NAME-REGEX,(?i).*anthropic.*
+  - PROCESS-NAME-REGEX,(?i).*gemini.*
+  - PROCESS-NAME-REGEX,(?i).*perplexity.*
 
   # Local AI & Generators (Ollama, Stable Diffusion)
   # Часто требуют VPN для скачивания моделей
-  - PROCESS-NAME,Ollama.exe
-  - PROCESS-NAME,Ollama
-  - PROCESS-NAME,LMStudio.exe
-  - PROCESS-NAME,LM Studio.exe
-  - PROCESS-NAME,Jan.exe
-  - PROCESS-NAME,Continue.exe
-  - PROCESS-NAME,Midjourney.exe
-  - PROCESS-NAME,StableDiffusion.exe
-  - PROCESS-NAME,ComfyUI.exe
-  - PROCESS-NAME,Automatic1111.exe
+  - PROCESS-NAME-REGEX,(?i).*ollama.*
+  - PROCESS-NAME-REGEX,(?i).*lm ?studio.*
+  - PROCESS-NAME-REGEX,(?i).*jan.*
+  - PROCESS-NAME-REGEX,(?i).*continue.*
+  - PROCESS-NAME-REGEX,(?i).*midjourney.*
+  - PROCESS-NAME-REGEX,(?i).*stablediffusion.*
+  - PROCESS-NAME-REGEX,(?i).*comfyui.*
+  - PROCESS-NAME-REGEX,(?i).*automatic1111.*
 
   # ==========================================
   # 6. ПРОЦЕССЫ - МЕССЕНДЖЕРЫ (Если нужен VPN)
   # ==========================================
-  - PROCESS-NAME,Telegram.exe
-  - PROCESS-NAME,Telegram
+  - PROCESS-NAME-REGEX,(?i).*telegram.*
   
   # ==========================================
   # 7. СПЕЦИАЛЬНЫЕ ПУТИ (macOS)
@@ -203,10 +192,7 @@ payload:
   # Чат и социальные функции
   - DOMAIN-SUFFIX,steam-chat.com
   # Внутренний браузер (отвечает за отрисовку магазина)
-  - PROCESS-NAME,steamwebhelper.exe
-  - PROCESS-NAME,SteamWebHelper.exe
-  - PROCESS-NAME,steamwebhelper
-  - PROCESS-NAME,SteamWebHelper
+  - PROCESS-NAME-REGEX,(?i).*steamwebhelper.*
 
   # ==========================================
   # 9. DISCORD VOICE & UDP PORTS (FIX)
