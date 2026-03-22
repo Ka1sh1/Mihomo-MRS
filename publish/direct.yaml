@@ -314,6 +314,32 @@ payload:
   - PROCESS-NAME-REGEX,(?i).*roguetrader.*
 
   # ==========================================
+  # TEKKEN 8 (Matchmaking, Crossplay, P2P)
+  # ==========================================
+  # Исполняемые файлы игры (PC)
+  # Polaris-Win64-Shipping.exe - основной процесс движка UE5
+  - PROCESS-NAME-REGEX,(?i).*tekken.*
+  - PROCESS-NAME-REGEX,(?i).*polaris-win64-shipping.*
+  
+  # Epic Online Services (используется для кроссплея, матчмейкинга и связи P2P)
+  - DOMAIN-SUFFIX,epicgames.com
+  - DOMAIN-SUFFIX,epicgames.dev
+  - DOMAIN-SUFFIX,unrealengine.com
+  
+  # Порты матчмейкинга и P2P (Steam & PS5)
+  - DST-PORT,3074
+  - DST-PORT,3478
+  - DST-PORT,3479
+  - DST-PORT,3480
+  - DST-PORT,27015
+  - DST-PORT,27031
+  - DST-PORT,27032
+  - DST-PORT,27033
+  - DST-PORT,27034
+  - DST-PORT,27035
+  - DST-PORT,27036
+
+  # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
   # ==========================================
 
