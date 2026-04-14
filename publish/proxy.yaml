@@ -216,3 +216,12 @@ payload:
   - DOMAIN-SUFFIX,brawlstars.com
   - DOMAIN-SUFFIX,brawlstarsgame.com
   - DOMAIN-SUFFIX,clashofclans.com
+
+  # ==========================================
+  # BATTLE.NET & BLIZZARD (AUTH & STORE)
+  # ==========================================
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,blizzard.com
+  - DOMAIN-SUFFIX,blizzard.net
+  - DOMAIN-SUFFIX,blz-contentstack.com
+  - DOMAIN-KEYWORD,blizzard
