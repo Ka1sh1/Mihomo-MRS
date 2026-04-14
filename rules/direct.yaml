@@ -273,6 +273,13 @@ payload:
   - DOMAIN-SUFFIX,steam.ru
 
   # ==========================================
+  # BLIZZARD CDN (DOWNLOADS)
+  # ==========================================
+  - DOMAIN-SUFFIX,cdns.blizzard.com
+  - DOMAIN-SUFFIX,level3.blizzard.com
+  - DOMAIN-KEYWORD,blzddist
+
+  # ==========================================
   # 7. ПРОЦЕССЫ (WINDOWS & MACOS)
   # ==========================================
 
@@ -282,7 +289,6 @@ payload:
   - PROCESS-NAME-REGEX,(?i).*gameoverlay.*
   
   # Game Launchers
-  - PROCESS-NAME-REGEX,(?i).*battle\.net.*
   - PROCESS-NAME-REGEX,(?i).*epic.*
   - PROCESS-NAME-REGEX,(?i).*eaapp.*
   - PROCESS-NAME-REGEX,(?i).*eadesktop.*
@@ -312,6 +318,17 @@ payload:
   - PROCESS-NAME-REGEX,(?i).*atomicheart.*
   - PROCESS-NAME-REGEX,(?i).*pathfinder.*
   - PROCESS-NAME-REGEX,(?i).*roguetrader.*
+
+  # ==========================================
+  # BLIZZARD GAMES (DIRECT)
+  # ==========================================
+  - PROCESS-NAME,Agent.exe
+  - PROCESS-NAME,Wow.exe
+  - PROCESS-NAME,WowClassic.exe
+  - PROCESS-NAME,Overwatch.exe
+  - PROCESS-NAME,Diablo IV.exe
+  - PROCESS-NAME,Diablo III64.exe
+  - PROCESS-NAME,Hearthstone.exe
 
   # ==========================================
   # TEKKEN 8 (Matchmaking, Crossplay, P2P)
