@@ -280,46 +280,6 @@ payload:
   - DOMAIN-KEYWORD,blzddist
 
   # ==========================================
-  # 7. ПРОЦЕССЫ (WINDOWS & MACOS)
-  # ==========================================
-
-  
-  # Steam Client & Services
-  - PROCESS-NAME-REGEX,(?i).*steam.*
-  - PROCESS-NAME-REGEX,(?i).*gameoverlay.*
-  
-  # Game Launchers
-  - PROCESS-NAME-REGEX,(?i).*epic.*
-  - PROCESS-NAME-REGEX,(?i).*eaapp.*
-  - PROCESS-NAME-REGEX,(?i).*eadesktop.*
-  - PROCESS-NAME-REGEX,(?i).*origin.*
-  
-  # Popular Games
-  - PROCESS-NAME-REGEX,(?i).*dota2.*
-  - PROCESS-NAME-REGEX,(?i).*cs2.*
-  - PROCESS-NAME-REGEX,(?i).*csgo.*
-  - PROCESS-NAME-REGEX,(?i).*fortnite.*
-  - PROCESS-NAME-REGEX,(?i).*rocketleague.*
-  - PROCESS-NAME-REGEX,(?i).*apex.*
-  - PROCESS-NAME-REGEX,(?i).*overwatch.*
-  - PROCESS-NAME-REGEX,(?i).*leagueoflegends.*
-  - PROCESS-NAME-REGEX,(?i).*genshin.*
-  - PROCESS-NAME-REGEX,(?i).*starrail.*
-  - PROCESS-NAME-REGEX,(?i).*vrchat.*
-  
-  # Russian Games & Lesta
-  - PROCESS-NAME-REGEX,(?i).*lgc.*
-  - PROCESS-NAME-REGEX,(?i).*tanki.*
-  - PROCESS-NAME-REGEX,(?i).*tank.*blitz.*
-  - PROCESS-NAME-REGEX,(?i).*worldoftanks.*
-  - PROCESS-NAME-REGEX,(?i).*worldofwarships.*
-  - PROCESS-NAME-REGEX,(?i).*warthunder.*
-  - PROCESS-NAME-REGEX,(?i).*warface.*
-  - PROCESS-NAME-REGEX,(?i).*atomicheart.*
-  - PROCESS-NAME-REGEX,(?i).*pathfinder.*
-  - PROCESS-NAME-REGEX,(?i).*roguetrader.*
-
-  # ==========================================
   # BLIZZARD GAMES (DIRECT)
   # ==========================================
   - PROCESS-NAME,Agent.exe
@@ -335,8 +295,6 @@ payload:
   # ==========================================
   # Исполняемые файлы игры (PC)
   # Polaris-Win64-Shipping.exe - основной процесс движка UE5
-  - PROCESS-NAME-REGEX,(?i).*tekken.*
-  - PROCESS-NAME-REGEX,(?i).*polaris-win64-shipping.*
   
   # Epic Online Services (используется для кроссплея, матчмейкинга и связи P2P)
   - DOMAIN-SUFFIX,epicgames.com
@@ -360,7 +318,6 @@ payload:
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
   # ==========================================
 
-  
   # Локальная сеть и порты
   - IP-CIDR,192.168.0.0/16,no-resolve
   - IP-CIDR,10.0.0.0/8,no-resolve
