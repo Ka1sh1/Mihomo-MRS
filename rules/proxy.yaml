@@ -209,7 +209,4 @@ payload:
   - DOMAIN-SUFFIX,blizzard.com
   - DOMAIN-SUFFIX,blizzard.net
   - DOMAIN-SUFFIX,blz-contentstack.com
-  # ==========================================
-  # 9. ТОРРЕНТ ТРЕКЕРЫ
-  # ==========================================
-  - DOMAIN-SUFFIX,rutracker.org
+  - DOMAIN-KEYWORD,blizzard
