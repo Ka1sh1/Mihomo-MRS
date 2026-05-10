@@ -42,6 +42,7 @@ payload:
   - DOMAIN-KEYWORD,ivi
   - DOMAIN-KEYWORD,okko
   - DOMAIN-KEYWORD,2gis
+  - DOMAIN-KEYWORD,windrose
 
   # ==========================================
   # 1. ГОСУДАРСТВЕННЫЕ СЕРВИСЫ РФ
@@ -289,6 +290,14 @@ payload:
   - PROCESS-NAME,Diablo IV.exe
   - PROCESS-NAME,Diablo III64.exe
   - PROCESS-NAME,Hearthstone.exe
+
+  # ==========================================
+  # WINDROSE
+  # ==========================================
+  - PROCESS-NAME,Windrose.exe
+  - PROCESS-NAME,Windrose-Win64-Shipping.exe
+  - PROCESS-NAME,WindroseServer.exe
+  - PROCESS-NAME,WindroseServer-Win64-Shipping.exe
 
   # ==========================================
   # TEKKEN 8 (Matchmaking, Crossplay, P2P)
