@@ -324,6 +324,100 @@ payload:
   - DST-PORT,27036
 
   # ==========================================
+  # ESCAPE FROM TARKOV (DIRECT & BYPASS)
+  # ==========================================
+  - DOMAIN-KEYWORD,tarkov
+  - DOMAIN-KEYWORD,battlestate
+  - DOMAIN-SUFFIX,tarkov.com
+  - DOMAIN-SUFFIX,escapefromtarkov.com
+  - DOMAIN-SUFFIX,battlestategames.com
+  - DOMAIN-SUFFIX,eft.com
+  - PROCESS-NAME,EscapeFromTarkov.exe
+  - PROCESS-NAME,BsgLauncher.exe
+  - PROCESS-NAME,EscapeFromTarkov_BE.exe
+  - PROCESS-NAME,BEService_x64.exe
+  - PROCESS-NAME,BEService.exe
+
+  # ==========================================
+  # EA APP & ORIGIN (DIRECT)
+  # ==========================================
+  - DOMAIN-KEYWORD,electronicarts
+  - DOMAIN-SUFFIX,ea.com
+  - DOMAIN-SUFFIX,origin.com
+  - DOMAIN-SUFFIX,electronicarts.com
+  - DOMAIN-SUFFIX,bioware.com
+  - DOMAIN-SUFFIX,pgts.content.ea.com
+  - PROCESS-NAME,EADesktop.exe
+  - PROCESS-NAME,EALauncher.exe
+  - PROCESS-NAME,EABackgroundService.exe
+  - PROCESS-NAME,Origin.exe
+  - PROCESS-NAME,OriginWebHelperService.exe
+  - PROCESS-NAME,Link2EA.exe
+  - PROCESS-NAME,EAConnect_ActiveX.exe
+  - PROCESS-NAME,EADesktop
+  - PROCESS-NAME,Origin
+
+  # ==========================================
+  # EPIC GAMES LAUNCHER (DIRECT)
+  # ==========================================
+  - PROCESS-NAME,EpicGamesLauncher.exe
+  - PROCESS-NAME,EpicWebHelper.exe
+  - PROCESS-NAME,EOSBootStrapper.exe
+  - PROCESS-NAME,EpicGamesLauncher-Mac-Shipping
+
+  # ==========================================
+  # UBISOFT CONNECT (DIRECT)
+  # ==========================================
+  - DOMAIN-KEYWORD,ubisoft
+  - DOMAIN-SUFFIX,ubisoft.com
+  - DOMAIN-SUFFIX,uplay.com
+  - DOMAIN-SUFFIX,ubisoftproject.com
+  - PROCESS-NAME,UbisoftConnect.exe
+  - PROCESS-NAME,upc.exe
+  - PROCESS-NAME,UplayService.exe
+  - PROCESS-NAME,UbisoftConnect
+  - PROCESS-NAME,upc
+
+  # ==========================================
+  # RIOT GAMES (DIRECT)
+  # ==========================================
+  - DOMAIN-KEYWORD,riotgames
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,leagueoflegends.com
+  - DOMAIN-SUFFIX,valorantgames.com
+  - PROCESS-NAME,RiotClientServices.exe
+  - PROCESS-NAME,RiotClientCrashHandler.exe
+  - PROCESS-NAME,LeagueClient.exe
+  - PROCESS-NAME,LeagueClientUx.exe
+  - PROCESS-NAME,VALORant.exe
+  - PROCESS-NAME,Riot Client
+  - PROCESS-NAME,RiotClientServices
+  - PROCESS-NAME,LeagueofLegends
+  - PROCESS-NAME,LeagueClient
+  - PROCESS-NAME,LeagueClientUx
+
+  # ==========================================
+  # GOG GALAXY (DIRECT)
+  # ==========================================
+  - DOMAIN-KEYWORD,gog.com
+  - DOMAIN-SUFFIX,gog.com
+  - DOMAIN-SUFFIX,gog-statics.com
+  - PROCESS-NAME,GalaxyClient.exe
+  - PROCESS-NAME,GalaxyClientService.exe
+  - PROCESS-NAME,GalaxyCommunication.exe
+  - PROCESS-NAME,GalaxyClient
+
+  # ==========================================
+  # STEAM CLIENT (LAUNCHER & DIAGNOSTICS)
+  # ==========================================
+  - PROCESS-NAME,steam.exe
+  - PROCESS-NAME,steamerrorreporter.exe
+  - PROCESS-NAME,steamerrorreporter64.exe
+  - PROCESS-NAME,steam
+  - PROCESS-NAME,steam_osx
+  - PROCESS-NAME,Steam Helper
+
+  # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
   # ==========================================
 
