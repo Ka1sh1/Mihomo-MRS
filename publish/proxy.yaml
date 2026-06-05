@@ -210,3 +210,14 @@ payload:
   - DOMAIN-SUFFIX,blizzard.net
   - DOMAIN-SUFFIX,blz-contentstack.com
   - DOMAIN-KEYWORD,blizzard
+
+  # ==========================================
+  # HERO SIEGE
+  # ==========================================
+  - PROCESS-NAME,Hero_Siege.exe
+  - DOMAIN-SUFFIX,panicartstudios.com
+
+  # ==========================================
+  # CALL OF DUTY
+  # ==========================================
+  - PROCESS-NAME,cod.exe
