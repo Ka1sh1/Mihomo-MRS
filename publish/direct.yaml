@@ -19,6 +19,7 @@ payload:
   - DOMAIN-KEYWORD,yummyani
   - DOMAIN-KEYWORD,yummyanime
   - DOMAIN-KEYWORD,yummy-anime
+  - DOMAIN-KEYWORD,mangabuff
   - DOMAIN-KEYWORD,mail.ru
   - DOMAIN-KEYWORD,avito
   - DOMAIN-KEYWORD,ozon
@@ -226,6 +227,7 @@ payload:
   - DOMAIN-SUFFIX,ivi.ru
   - DOMAIN-SUFFIX,okko.tv
   - DOMAIN-SUFFIX,yummyani.me
+  - DOMAIN-SUFFIX,mangabuff.ru
   - DOMAIN-SUFFIX,okko.ru
   - DOMAIN-SUFFIX,more.tv
   - DOMAIN-SUFFIX,premier.one
