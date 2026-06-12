@@ -12,7 +12,6 @@ payload:
   - DOMAIN-KEYWORD,notion
   - DOMAIN-KEYWORD,dropbox
   - DOMAIN-KEYWORD,spotify
-  - DOMAIN-KEYWORD,twitch
   - DOMAIN-KEYWORD,cloudflare
   - DOMAIN-KEYWORD,discord
   - DOMAIN-KEYWORD,slack
