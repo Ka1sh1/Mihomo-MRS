@@ -314,7 +314,6 @@ payload:
   
   # Порты матчмейкинга и P2P (Steam & PS5)
   - DST-PORT,3074
-  - DST-PORT,3478
   - DST-PORT,3479
   - DST-PORT,3480
   - DST-PORT,27015
