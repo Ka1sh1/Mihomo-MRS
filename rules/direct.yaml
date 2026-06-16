@@ -173,6 +173,21 @@ payload:
   - PROCESS-NAME,Steam Helper
 
   # ==========================================
+  # TORRENT CLIENTS (DIRECT)
+  # ==========================================
+  - PROCESS-NAME,qbittorrent.exe
+  - PROCESS-NAME,qbittorrent
+  - PROCESS-NAME,uTorrent.exe
+  - PROCESS-NAME,uTorrent
+  - PROCESS-NAME,transmission-qt.exe
+  - PROCESS-NAME,transmission-daemon
+  - PROCESS-NAME,Transmission
+  - PROCESS-NAME,deluge.exe
+  - PROCESS-NAME,deluge
+  - PROCESS-NAME,WebTorrent.exe
+  - PROCESS-NAME,WebTorrent
+
+  # ==========================================
   # 8. СПЕЦИАЛЬНЫЕ ПУТИ И СЕТЬ
   # ==========================================
 
