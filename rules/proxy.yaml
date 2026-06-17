@@ -44,6 +44,15 @@ payload:
   - DOMAIN-SUFFIX,discord.gg
   - DOMAIN-SUFFIX,discordapp.com
   - DOMAIN-SUFFIX,discordapp.net
+  - PROCESS-NAME,Discord.exe
+  - PROCESS-NAME,Discord
+  - PROCESS-NAME,discord
+  - PROCESS-NAME,DiscordCanary.exe
+  - PROCESS-NAME,DiscordCanary
+  - PROCESS-NAME,DiscordPTB.exe
+  - PROCESS-NAME,DiscordPTB
+  - PROCESS-NAME,DiscordDevelopment.exe
+  - PROCESS-NAME,DiscordDevelopment
   # Other Socials
   - DOMAIN-SUFFIX,linkedin.com
   - DOMAIN-SUFFIX,tiktok.com
