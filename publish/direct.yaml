@@ -20,16 +20,23 @@ payload:
   - DOMAIN-SUFFIX,tanksblitz.ru
 
   # ==========================================
-  # 6. STEAM (DOWNLOADS ONLY) - DIRECT
+  # 6. STEAM (CDN & DOWNLOADS) - DIRECT
   # ==========================================
-  # Эти домены используются только для скачивания самих файлов игр и обновлений.
 
-  # Главные серверы для загрузки контента
+  # Основные CDN серверы загрузки
   - DOMAIN-SUFFIX,steamcontent.com
   - DOMAIN-SUFFIX,steam-api.com
   - DOMAIN-SUFFIX,steamstat.us
   - DOMAIN-SUFFIX,steamchina.com
   - DOMAIN-SUFFIX,steam.ru
+
+  # Akamai CDN — без этих правил rknasnblock захватывает трафик!
+  # steampipe.akamaized.net виден во всех сессиях скачивания (Akamai-вариант steampipe-протокола)
+  - DOMAIN-SUFFIX,steampipe.akamaized.net
+  - DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
+
+  # Пользовательский контент (Мастерская, скриншоты, загрузки пользователей)
+  - DOMAIN-SUFFIX,steamusercontent.com
 
   # ==========================================
   # BLIZZARD CDN (DOWNLOADS)
