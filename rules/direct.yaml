@@ -207,8 +207,6 @@ payload:
 
   # Xbox Live CIDR блоки (официальные Azure datacenter адреса)
   # Источник: Microsoft GDK — configure-dev-network
-  - IP-CIDR,104.29.147.0/24,no-resolve
-  - IP-CIDR,104.16.133.0/24,no-resolve
   - IP-CIDR,134.170.28.0/23,no-resolve
   - IP-CIDR,191.232.80.128/25,no-resolve
   - IP-CIDR,191.232.82.128/25,no-resolve
