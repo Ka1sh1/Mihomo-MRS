@@ -189,6 +189,9 @@ payload:
   - DOMAIN-SUFFIX,xbox.com
   - DOMAIN-SUFFIX,xboxlive.com
   - DOMAIN-SUFFIX,xboxservices.com
+  # Forza game servers
+  - DOMAIN-SUFFIX,forzamotorsport.net
+  - DOMAIN-SUFFIX,forza.net
   # PlayFab: мультиплеер, матчмейкинг, title storage
   - DOMAIN-SUFFIX,playfab.com
   - DOMAIN-SUFFIX,playfabapi.com
