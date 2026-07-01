@@ -208,6 +208,38 @@ payload:
   # Xbox Live Kerberos аутентификация
   - DST-PORT,88
 
+  # ==========================================
+  # КОНСОЛЬНЫЕ/ИГРОВЫЕ ПОРТЫ (перенесено из Gateway/onryou.yaml, 2026-07-01)
+  # ==========================================
+  # Перенесено с Mihomo_config/Gateway — там find-process-mode: off, поэтому шлюз (и любой
+  # PROCESS-NAME-слепой клиент) нуждается в портах явно. Здесь bare DST-PORT (без AND/NETWORK) —
+  # намеренно, т.к. этот файл тянут все три конфига (Mihomo/Stash/Gateway), а Stash не
+  # поддерживает AND-компаунды даже внутри внешнего rule-provider. Источники и уровень
+  # уверенности — см. Mihomo_config/KNOWLEDGE.md §"Игровые консольные порты".
+
+  # Battle.net (Diablo II/III) — доп. к процессам выше
+  - DST-PORT,6113
+
+  # EA / Origin / Battlefield / Apex Legends (высокая уверенность — офиц. список EA)
+  - DST-PORT,3216
+  - DST-PORT,9988
+  - DST-PORT,17502
+
+  # Riot Games (League of Legends / Valorant) — высокая уверенность, офиц. список Riot
+  - DST-PORT,2099
+  - DST-PORT,5000-5500
+  - DST-PORT,8393-8400
+
+  # Ubisoft Connect / Rainbow Six Siege — 14000-14024 подтверждено официально;
+  # 3120 НЕ подтверждён независимо, оставлен по группировке (см. KNOWLEDGE.md)
+  - DST-PORT,3120
+  - DST-PORT,14000-14024
+
+  # Nintendo Switch NAT-check / Wi-Fi Connection — точное совпадение с офиц. списком Nintendo
+  - DST-PORT,6667
+  - DST-PORT,12400
+  - DST-PORT,28910
+
   # Xbox Live CIDR блоки (официальные Azure datacenter адреса)
   # Источник: Microsoft GDK — configure-dev-network
   - IP-CIDR,134.170.28.0/23,no-resolve
