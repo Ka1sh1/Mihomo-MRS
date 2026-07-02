@@ -25,6 +25,7 @@ payload:
   - DOMAIN-KEYWORD,copilot
   - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,perplexity
+  - DOMAIN-KEYWORD,duolingo
 
   # ==========================================
   # 1. СОЦИАЛЬНЫЕ СЕТИ И МЕССЕНДЖЕРЫ
