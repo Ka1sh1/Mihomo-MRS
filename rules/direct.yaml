@@ -94,6 +94,14 @@ payload:
   - DOMAIN-SUFFIX,escapefromtarkov.com
   - DOMAIN-SUFFIX,battlestategames.com
   - DOMAIN-SUFFIX,eft.com
+  # ДОБАВЛЕНО 2026-08-08. Третий домен студии, который не ловил НИ ОДИН шаблон выше:
+  # в «eft-project.com» нет подстроки «tarkov» и нет «battlestate», а на «eft.com» он
+  # не оканчивается — это разные суффиксы. Домен проваливался в rknasnblock (резолвится
+  # в Cloudflare 104.18.x, чей ASN в блок-листе РКН) и уезжал в туннель, пока остальная
+  # игра шла напрямую. Замерено на живом шлюзе: launcher-seq.eft-project.com:2095.
+  # PROCESS-NAME,BsgLauncher.exe ниже эту дыру не закрывал: на шлюзе find-process-mode
+  # выключен, процессы клиентов сети оттуда не видны вообще.
+  - DOMAIN-SUFFIX,eft-project.com
   - PROCESS-NAME,EscapeFromTarkov.exe
   - PROCESS-NAME,BsgLauncher.exe
   - PROCESS-NAME,EscapeFromTarkov_BE.exe
