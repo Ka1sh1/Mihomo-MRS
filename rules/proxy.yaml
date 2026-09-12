@@ -26,6 +26,10 @@ payload:
   - DOMAIN-KEYWORD,gemini
   - DOMAIN-KEYWORD,perplexity
   - DOMAIN-KEYWORD,duolingo
+  # Lovable: lovable.dev, api.lovable.dev, lovable-api.com, lovableproject.com, lovable.app
+  - DOMAIN-KEYWORD,lovable
+  # cdn.gpteng.co — скрипт-хост Lovable (проверить по логам шлюза)
+  - DOMAIN-SUFFIX,gpteng.co
 
   # ==========================================
   # 1. СОЦИАЛЬНЫЕ СЕТИ И МЕССЕНДЖЕРЫ
